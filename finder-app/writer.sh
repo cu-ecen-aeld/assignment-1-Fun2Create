@@ -16,7 +16,7 @@ then
 	exit 1
 fi	
 
-checkdir=$(grep -o .*/ <<< $writefile)
+checkdir=$(grep -o ".*/" <<< $writefile)
 mkdir -p $checkdir
 
 $(echo $writestr > $writefile)
